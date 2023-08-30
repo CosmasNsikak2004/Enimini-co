@@ -8,6 +8,11 @@
     <!-- ----- Owl-Carousel ----- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+
+    <!-- ----- Animations ----- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>NIMINI CO.</title>
 </head>
 <body onload="myFunction()" style="margin:0; padding:0; max-height: 100vh;">
@@ -479,7 +484,7 @@
     
     
     <div class="name-container">
-      <div class="logo-name">nimini co.</div>
+      <div class="logo-name animate__animated animate__fadeInUp animate__delay-2s">nimini co.</div>
     </div>
 
   </div>  
@@ -487,7 +492,7 @@
   var myVar;
     
   function myFunction() {
-    myVar = setTimeout(showPage, 4500);
+    myVar = setTimeout(showPage, 3500);
   }
     
   function showPage() {
@@ -509,10 +514,15 @@
         : 'fa-solid fa-bars-staggered'
     }
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
       integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ -->
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <!--  ICONS  -->
   <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
