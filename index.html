@@ -1,538 +1,680 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <!-- ----- Owl-Carousel ----- -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
 
     <!-- ----- Animations ----- -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>NIMINI CO.</title>
-</head>
-<body onload="myFunction()" style="margin:0; padding:0; max-height: 100vh;">
-  <!-- ---------- Website Container ---------- -->
-  <div class="Website-container" style="display:none;" id="myDiv">
-    <!-- ---------- Home Section Start ---------- -->
-    <section class="home" id="home">
-      <!-- header start -->
-      <div class="top-bar">
-        <div class="text-start">
-          <p class="top-text">
-            <img src="./assets/phone-call.svg" alt="svg">
-            Call Us <a href="tel:+1 (346) 664-8018">+1 (346) 664-8018</a>
-          </p>
+  </head>
+  <body onload="myFunction()" style="margin: 0; padding: 0; max-height: 100vh">
+    <!-- ---------- Website Container ---------- -->
+    <div class="Website-container" style="display: none" id="myDiv">
+      <!-- ---------- Home Section Start ---------- -->
+      <section class="home" id="home">
+        <!-- header start -->
+        <div class="top-bar">
+          <div class="text-start">
+            <p class="top-text">
+              <img src="./assets/phone-call.svg" alt="svg" />
+              Call Us <a href="tel:+1 (346) 664-8018">+1 (346) 664-8018</a>
+            </p>
+          </div>
+          <div class="text-ends" style="text-align: right">
+            <button class="btn top-btn">VIEW PRODUCTS</button>
+          </div>
         </div>
-        <div class="text-ends" style="text-align: right;">
-          <button class="btn top-btn">VIEW PRODUCTS</button></div>
-      </div>
-      <!-- header ends -->
-      <!-- Navbar start -->
-      <nav class="navbar">
-        <div class="logo top-log"><i class="fa-brands fa-neos"></i> NIMINI CO.</div>
+        <!-- header ends -->
+        <!-- Navbar start -->
+        <nav class="navbar">
+          <div class="logo top-log">
+            <i class="fa-brands fa-neos"></i> NIMINI CO.
+          </div>
 
-        <ul class="nav-links">
+          <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#product">Products</a></li>
             <li><a href="#contact">Contact Us</a></li>
-        </ul>
+          </ul>
 
-        <div class="nav-sci">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <div class="toggle_btn">
-          <i class="fa-solid fa-bars-staggered"></i>
-        </div>   
+          <div class="nav-sci">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
 
-        <div class="dropdown_menu">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li>
+          <div class="dropdown_menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
               <a href="#" class="drop"><i class="fab fa-facebook-f"></i></a>
               <a href="#" class="drop"><i class="fab fa-twitter"></i></a>
               <a href="#" class="drop"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="drop"><i class="fab fa-whatsapp"></i></a>    
-          </li>
-        </div>
-
-      </nav>      
-      <!-- Navbar ends -->
-      <!-- Hero section starts -->
-      <div class="tainer">
-        <div class="hero">
+              <a href="#" class="drop"><i class="fab fa-whatsapp"></i></a>
+            </li>
+          </div>
+        </nav>
+        <!-- Navbar ends -->
+        <!-- Hero section starts -->
+        <div class="tainer">
+          <div class="hero">
             <div class="icon-container">
-                <div class="vertical-line" style="width: 1px; height: 3rem; background-color: #3388ff;"></div>
-                <div class="social-icon first"> <a href="#"><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="social-icon"> <a href="#"><i class="fa-brands fa-x-twitter"></i></a></div>
-                <div class="social-icon last"> <a href="#"><i class="fab fa-whatsapp"></i></a></div>
-                <div class="vertical-line" style="width: 1px; height: 3rem; background-color: #3388ff;"></div>
+              <div
+                class="vertical-line"
+                style="width: 1px; height: 3rem; background-color: #3388ff"
+              ></div>
+              <div class="social-icon first">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div class="social-icon">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              <div class="social-icon last">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              </div>
+              <div
+                class="vertical-line"
+                style="width: 1px; height: 3rem; background-color: #3388ff"
+              ></div>
             </div>
             <div class="hero-text">
-                <h1>Bringing Smiles Back to Health</h1>
-                <p class="f-p">NIMINI CO.'s undeniable success stands as a testament to the exceptional quality of its services and the unparalleled professionalism of its staff.</p>
-                <p class="s-2">The company's journey to the pinnacle of achievement has been meticulously paved with a commitment to delivering services of the highest caliber.</p>
-                <button class="btn">REQUEST AN APPOINTMENT</button>
+              <h1>Bringing Smiles Back to Health</h1>
+              <p class="f-p">
+                NIMINI CO.'s undeniable success stands as a testament to the
+                exceptional quality of its services and the unparalleled
+                professionalism of its staff.
+              </p>
+              <p class="s-2">
+                The company's journey to the pinnacle of achievement has been
+                meticulously paved with a commitment to delivering services of
+                the highest caliber.
+              </p>
+              <button class="btn">REQUEST AN APPOINTMENT</button>
             </div>
 
             <div class="hero-image">
-                <div class="image-grid hero-grid">
-                    <img class="image-grid-col-2 image-grid-row-2 g-1" src="./assets/grid (1).jpg" alt="img">
-                    <img class="g-2" src="./assets/grid (3).jpg" alt="img">
-                    <img class=" g-3" src="./assets/grid (2).jpg" alt="img">
-                </div>
-            </div>    
-        </div>
-      </div>
-      <!-- Hero section ends -->
-    </section>
-    <!-- ---------- Home Section Ends ---------- -->
-
-    <!-- ---------- Services Section Starts ---------- -->
-    <section class="services reusable" id="services">
-
-      <!-- ----- Heading Text Starts ----- -->
-      <header class="headings">
-        <h3>SERVICES</h3>
-        <h1>We deliver exceptional services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, 
-          eos dolores ratione officiis odio nesciunt?</p>
-      </header>
-      <!-- ----- Heading Text Ends ----- -->
-
-      <!-- ----- Service Box Starts -->
-      <div class="services-container">
-
-        <div class="service-box">
-          <div class="icon-wrapper"><i class="fa-solid fa-cart-shopping"></i></div>
-          <h2>Convenient ordering</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem ab labore aut laboriosam in?</p>
-          <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-
-        <div class="service-box">
-          <div class="icon-wrapper"><i class="fa-solid fa-file-pen"></i></div>
-          <h2>Customization & Drop-shipping</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem ab labore aut laboriosam in?</p>
-          <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-
-        <div class="service-box">
-          <div class="icon-wrapper"><i class="fa-solid fa-heart"></i></div>
-          <h2>Superior service</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem ab labore aut laboriosam in?</p>
-          <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <!-- ----- Service Box Ends -->
-    </section>
-    <!-- ---------- Services Section Ends ---------- -->
-
-    <!-- about section starts -->
-    <section class="about" id="about">
-      <!-- about image starts -->
-      <div class="about-image">
-        <div class="abt-image">
-          <div class="image-grid abt-grid">
-              <img class="image-grid-col-2 image-grid-row-2 g-1" src="./assets/abt-grid (1).jpg" alt="img">
-              <img class="g-2" src="./assets/abt-grid (3).jpg" alt="img">
-              <img class=" g-3" src="./assets/abt-grid (2).jpg" alt="img">
+              <div class="image-grid hero-grid">
+                <img
+                  class="image-grid-col-2 image-grid-row-2 g-1 animate__animated animate__fadeInRight"
+                  src="./assets/grid (1).jpg"
+                  alt="img"
+                />
+                <img
+                  class="g-2 animate__animated animate__fadeInRight"
+                  src="./assets/grid (3).jpg"
+                  alt="img"
+                />
+                <img
+                  class="g-3 animate__animated animate__fadeInRight"
+                  src="./assets/grid (2).jpg"
+                  alt="img"
+                />
+              </div>
+            </div>
           </div>
-      </div>    
-      </div>
-      <!-- about image ends -->
-      <!-- about description starts -->
-      <div class="about-desc">
-        <h3>OUR COMPANY</h3>
+        </div>
+        <!-- Hero section ends -->
+      </section>
+      <!-- ---------- Home Section Ends ---------- -->
 
-        <h2>NIMINI Company began as a long-term care pharmacy, run and owned by a tight-knit family known for our unmatched service.</h2>
-        <p>As time progressed, we underwent transformation and growth, now encompassing the distribution of medical supplies to both national chains and independent healthcare facilities such as skilled nursing centers, rehabilitation units, home care services, hospices, medical practitioners, hospitals, retail DME outlets, veterinarians, dialysis and surgery centers, as well as smaller medical supply distributors. <br><br>
-          This expansion marks not only the breadth of our reach but also the depth of our commitment to providing essential healthcare solutions. Through each partnership we've forged and every facility we've supported, our values of excellence, reliability, and personalized care have remained unwavering.</p>
-      </div>
-      <!-- about description ends -->
-    </section>
-    <!-- about section ends -->
+      <!-- ---------- Services Section Starts ---------- -->
+      <section class="services reusable" id="services">
+        <!-- ----- Heading Text Starts ----- -->
+        <header class="headings">
+          <h3>SERVICES</h3>
+          <h1>We deliver exceptional services</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+            eos dolores ratione officiis odio nesciunt?
+          </p>
+        </header>
+        <!-- ----- Heading Text Ends ----- -->
 
-    <!-- ------ Testimonials Starts ----- -->
-    <section class="testimonials reusable" id="testimonial">
-      <!-- ----- Headers Starts ----- -->
-      <header class="headings">
-        <h3>TESTIMONIALS</h3>
-        <h1>Testimonials from our esteemed clients</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, necessitatibus iusto? Ipsa ut facilis saepe.</p>
-      </header>  
-      <!-- ----- Headers Ends ----- -->
+        <!-- ----- Service Box Starts -->
+        <div class="services-container">
+          <div class="service-box">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <h2>Convenient ordering</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              dolorem ab labore aut laboriosam in?
+            </p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
 
-      <!-- ----- Owl Carousel Starts ----- -->
-      <div class="owl-carousel owl-theme testimonials-container">
-        <!-- ----- Card1 Starts ----- -->
-        <div class="item testimonial-card">
-          <main class="test-card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos,
-              rem atque distinctio porro laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, error!</p>
-            
-            <div class="profile">
-              <div class="profile-image">
-                <img src="./assets/test-1.jpg" alt="test-img">
+          <div class="service-box">
+            <div class="icon-wrapper"><i class="fa-solid fa-file-pen"></i></div>
+            <h2>Customization & Drop-shipping</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              dolorem ab labore aut laboriosam in?
+            </p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-box">
+            <div class="icon-wrapper"><i class="fa-solid fa-heart"></i></div>
+            <h2>Superior service</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              dolorem ab labore aut laboriosam in?
+            </p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- ----- Service Box Ends -->
+      </section>
+      <!-- ---------- Services Section Ends ---------- -->
+
+      <!-- about section starts -->
+      <section class="about" id="about">
+        <!-- about image starts -->
+        <div class="about-image">
+          <div class="abt-image">
+            <div class="image-grid abt-grid">
+              <img
+                class="image-grid-col-2 image-grid-row-2 g-1"
+                src="./assets/abt-grid (1).jpg"
+                alt="img"
+              />
+              <img class="g-2" src="./assets/abt-grid (3).jpg" alt="img" />
+              <img class="g-3" src="./assets/abt-grid (2).jpg" alt="img" />
+            </div>
+          </div>
+        </div>
+        <!-- about image ends -->
+        <!-- about description starts -->
+        <div class="about-desc">
+          <h3>OUR COMPANY</h3>
+
+          <h2>
+            NIMINI Company began as a long-term care pharmacy, run and owned by
+            a tight-knit family known for our unmatched service.
+          </h2>
+          <p>
+            As time progressed, we underwent transformation and growth, now
+            encompassing the distribution of medical supplies to both national
+            chains and independent healthcare facilities such as skilled nursing
+            centers, rehabilitation units, home care services, hospices, medical
+            practitioners, hospitals, retail DME outlets, veterinarians,
+            dialysis and surgery centers, as well as smaller medical supply
+            distributors. <br /><br />
+            This expansion marks not only the breadth of our reach but also the
+            depth of our commitment to providing essential healthcare solutions.
+            Through each partnership we've forged and every facility we've
+            supported, our values of excellence, reliability, and personalized
+            care have remained unwavering.
+          </p>
+        </div>
+        <!-- about description ends -->
+      </section>
+      <!-- about section ends -->
+
+      <!-- ------ Testimonials Starts ----- -->
+      <section class="testimonials reusable" id="testimonial">
+        <!-- ----- Headers Starts ----- -->
+        <header class="headings">
+          <h3>TESTIMONIALS</h3>
+          <h1>Testimonials from our esteemed clients</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur,
+            necessitatibus iusto? Ipsa ut facilis saepe.
+          </p>
+        </header>
+        <!-- ----- Headers Ends ----- -->
+
+        <!-- ----- Owl Carousel Starts ----- -->
+        <div class="owl-carousel owl-theme testimonials-container">
+          <!-- ----- Card1 Starts ----- -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+                dignissimos, rem atque distinctio porro laborum? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Dolores, error!
+              </p>
+
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="./assets/test-1.jpg" alt="test-img" />
+                </div>
+                <div class="profile-desc">
+                  <span>Jospeh Stanley</span>
+                  <span>Physician</span>
+                </div>
               </div>
-              <div class="profile-desc">
-                <span>Jospeh Stanley</span>
-                <span>Physician</span>
+
+              <div class="quote">
+                <i class="fa fa-quote-right"></i>
               </div>
-            </div>
-      
-            <div class="quote">
-              <i class="fa fa-quote-right"></i>
-            </div>
-          </main>
-        </div>
-        <!-- ----- Card1 Ends ----- -->
-        <!-- ----- Card2 Starts ----- -->
-        <div class="item testimonial-card">
-          <main class="test-card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos,
-              rem atque distinctio porro laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, error!</p>
-            
-            <div class="profile">
-              <div class="profile-image">
-                <img src="./assets/test-2.jpg" alt="test-img">
+            </main>
+          </div>
+          <!-- ----- Card1 Ends ----- -->
+          <!-- ----- Card2 Starts ----- -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+                dignissimos, rem atque distinctio porro laborum? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Dolores, error!
+              </p>
+
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="./assets/test-2.jpg" alt="test-img" />
+                </div>
+                <div class="profile-desc">
+                  <span>Deborah Inyang</span>
+                  <span>Anesthesiologist</span>
+                </div>
               </div>
-              <div class="profile-desc">
-                <span>Deborah Inyang</span>
-                <span>Anesthesiologist</span>
+
+              <div class="quote">
+                <i class="fa fa-quote-right"></i>
               </div>
-            </div>
-      
-            <div class="quote">
-              <i class="fa fa-quote-right"></i>
-            </div>
-          </main>
-        </div>
-        <!-- ----- Card2 Ends ----- -->
-        <!-- ----- Card3 Starts ----- -->
-        <div class="item testimonial-card">
-          <main class="test-card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos,
-              rem atque distinctio porro laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, error!</p>
-            
-            <div class="profile">
-              <div class="profile-image">
-                <img src="./assets/test-3.jpg" alt="test-img">
+            </main>
+          </div>
+          <!-- ----- Card2 Ends ----- -->
+          <!-- ----- Card3 Starts ----- -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+                dignissimos, rem atque distinctio porro laborum? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Dolores, error!
+              </p>
+
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="./assets/test-3.jpg" alt="test-img" />
+                </div>
+                <div class="profile-desc">
+                  <span>Nsikak Cosmas</span>
+                  <span>Occupational Therapist</span>
+                </div>
               </div>
-              <div class="profile-desc">
-                <span>Nsikak Cosmas</span>
-                <span>Occupational Therapist</span>
+
+              <div class="quote">
+                <i class="fa fa-quote-right"></i>
               </div>
-            </div>
-      
-            <div class="quote">
-              <i class="fa fa-quote-right"></i>
-            </div>
-          </main>
-        </div>
-        <!-- ----- Card3 Ends ----- -->
-        <!-- ----- Card4 Starts ----- -->
-        <div class="item testimonial-card">
-          <main class="test-card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos,
-              rem atque distinctio porro laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, error!</p>
-            
-            <div class="profile">
-              <div class="profile-image">
-                <img src="./assets/test-6.jpg" alt="test-img">
+            </main>
+          </div>
+          <!-- ----- Card3 Ends ----- -->
+          <!-- ----- Card4 Starts ----- -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+                dignissimos, rem atque distinctio porro laborum? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Dolores, error!
+              </p>
+
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="./assets/test-6.jpg" alt="test-img" />
+                </div>
+                <div class="profile-desc">
+                  <span>Evelyn Daniels</span>
+                  <span>Financial Analyst</span>
+                </div>
               </div>
-              <div class="profile-desc">
-                <span>Evelyn Daniels</span>
-                <span>Financial Analyst</span>
+
+              <div class="quote">
+                <i class="fa fa-quote-right"></i>
               </div>
-            </div>
-      
-            <div class="quote">
-              <i class="fa fa-quote-right"></i>
-            </div>
-          </main>
-        </div>
-        <!-- ----- Card Ends ----- -->
-        <!-- ----- Card5 Starts ----- -->
-        <div class="item testimonial-card">
-          <main class="test-card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos,
-              rem atque distinctio porro laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, error!</p>
-            
-            <div class="profile">
-              <div class="profile-image">
-                <img src="./assets/test-5.jpg" alt="test-img">
+            </main>
+          </div>
+          <!-- ----- Card Ends ----- -->
+          <!-- ----- Card5 Starts ----- -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+                dignissimos, rem atque distinctio porro laborum? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Dolores, error!
+              </p>
+
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="./assets/test-5.jpg" alt="test-img" />
+                </div>
+                <div class="profile-desc">
+                  <span>Riley</span>
+                  <span>Nurse Practitioner</span>
+                </div>
               </div>
-              <div class="profile-desc">
-                <span>Riley</span>
-                <span>Nurse Practitioner</span>
+
+              <div class="quote">
+                <i class="fa fa-quote-right"></i>
               </div>
-            </div>
-      
-            <div class="quote">
-              <i class="fa fa-quote-right"></i>
-            </div>
-          </main>
-        </div>
-        <!-- ----- Card5 Ends ----- -->
-        <!-- ----- Card6 Starts ----- -->
-        <div class="item testimonial-card">
-          <main class="test-card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos,
-              rem atque distinctio porro laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, error!</p>
-            
-            <div class="profile">
-              <div class="profile-image">
-                <img src="./assets/test-4.jpg" alt="test-img">
+            </main>
+          </div>
+          <!-- ----- Card5 Ends ----- -->
+          <!-- ----- Card6 Starts ----- -->
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+                dignissimos, rem atque distinctio porro laborum? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Dolores, error!
+              </p>
+
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="./assets/test-4.jpg" alt="test-img" />
+                </div>
+                <div class="profile-desc">
+                  <span>Kierian Akpabio</span>
+                  <span>Medical Technician</span>
+                </div>
               </div>
-              <div class="profile-desc">
-                <span>Kierian Akpabio</span>
-                <span>Medical Technician</span>
+
+              <div class="quote">
+                <i class="fa fa-quote-right"></i>
               </div>
+            </main>
+          </div>
+          <!-- ----- Card6 Ends ----- -->
+        </div>
+        <!-- ----- Owl Carousel Ends ----- -->
+      </section>
+      <!-- ------ Testimonials Ends ----- -->
+
+      <!-- Banner Starts -->
+      <section class="banner-one text-center">
+        <div class="container text-white">
+          <blockquote class="lead">
+            <i class="fa fa-quote-left"></i> Our mission is to enhance lives and
+            elevate healthcare by seamlessly providing a diverse range of
+            medical solutions, driven by a legacy of exceptional service and a
+            commitment to innovation. <i class="fa fa-quote-right"></i>
+          </blockquote>
+          <small class="text text-sm">- Enimini Idongette, CEO</small>
+        </div>
+      </section>
+      <!-- Banner Ends -->
+
+      <!-- ---------- Products Section Starts ---------- -->
+      <section class="products reusable" id="products">
+        <!-- ----- Heading Text Starts ----- -->
+        <header class="headings">
+          <h3>PRODUCTS</h3>
+          <h1>Get a sneak peek at our upcoming 2023 equipment lineup</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+            eos dolores ratione officiis odio nesciunt?
+          </p>
+        </header>
+        <!-- ----- Heading Text Ends ----- -->
+        <!-- -----  Products contain Starts ----- -->
+        <div class="product">
+          <div class="box">
+            <span style="--i: 1"
+              ><img src="./assets/product (1).webp" alt=""
+            /></span>
+            <span style="--i: 2"
+              ><img src="./assets/product (2).webp" alt=""
+            /></span>
+            <span style="--i: 3"
+              ><img src="./assets/product (3).webp" alt=""
+            /></span>
+            <span style="--i: 4"
+              ><img src="./assets/product (4).webp" alt=""
+            /></span>
+            <span style="--i: 5"
+              ><img src="./assets/product (5).webp" alt=""
+            /></span>
+            <span style="--i: 6"
+              ><img src="./assets/product (6).webp" alt=""
+            /></span>
+            <span style="--i: 7"
+              ><img src="./assets/product (7).webp" alt=""
+            /></span>
+            <span style="--i: 8"
+              ><img src="./assets/product (8).webp" alt=""
+            /></span>
+          </div>
+        </div>
+        <div class="duct">
+          <button class="btn">VIEW MORE</button>
+        </div>
+        <!-- -----  Products contain Ends ----- -->
+      </section>
+      <!-- ---------- Product Section Ends---------- -->
+
+      <!-- ---------- Contact Section Starts ---------- -->
+      <section class="contact reusable" id="contact">
+        <!-- ----- Headers Starts ----- -->
+        <header class="headings">
+          <h3>CONTACT US</h3>
+          <h1>Get in Touch with Us</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur,
+            necessitatibus iusto? Ipsa ut facilis saepe.
+          </p>
+        </header>
+        <!-- ----- Headers Ends ----- -->
+
+        <!-- ----- Map Section Starts ----- -->
+
+        <div class="map">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6998899.062377542!2d-105.37252707493494!3d31.0699310270131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864070360b823249%3A0x16eb1c8f1808de3c!2sTexas%2C%20USA!5e0!3m2!1sen!2sng!4v1692995711700!5m2!1sen!2sng"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- ----- Map Section Ends ----- -->
+
+        <!-- ----- Contact Icons Starts ----- -->
+        <div class="contact-icon-container">
+          <div class="con-icon-box">
+            <div class="con-icon-wrapper">
+              <i class="fa-solid fa-mobile"></i>
             </div>
-      
-            <div class="quote">
-              <i class="fa fa-quote-right"></i>
+            <h4>+1 (346) 664-8018</h4>
+          </div>
+
+          <div class="con-icon-box">
+            <div class="con-icon-wrapper">
+              <i class="fa-solid fa-location-dot"></i>
             </div>
-          </main>
-        </div>
-        <!-- ----- Card6 Ends ----- -->
-      </div>
-      <!-- ----- Owl Carousel Ends ----- -->
-    </section>
-    <!-- ------ Testimonials Ends ----- -->
+            <h4>Oakwood Avenue Houston, Texas</h4>
+          </div>
 
-    <!-- Banner Starts -->
-    <section class="banner-one text-center">
-      <div class="container text-white">
-        <blockquote class="lead"><i class="fa fa-quote-left"></i>
-          Our mission is to enhance lives and elevate healthcare by seamlessly providing a diverse range of medical solutions,
-          driven by a legacy of exceptional service and a commitment to innovation. <i class="fa fa-quote-right"></i></blockquote>
-        <small class="text text-sm">- Enimini Idongette, CEO</small>  
-      </div>
-    </section>
-    <!-- Banner Ends -->
-
-    <!-- ---------- Products Section Starts ---------- -->
-    <section class="products reusable" id="products">
-
-      <!-- ----- Heading Text Starts ----- -->
-      <header class="headings">
-        <h3>PRODUCTS</h3>
-        <h1>Get a sneak peek at our upcoming 2023 equipment lineup</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, 
-          eos dolores ratione officiis odio nesciunt?</p>
-      </header>
-      <!-- ----- Heading Text Ends ----- -->
-
-      <div class="products-container p-container">
-        <div>
-          <a href="#">
-            <div class="product-card">
-              <img src="./assets/product (1).webp" class="product-image" alt="">
-              <!-- <p class="product-name">Oraimo Headphones</p> -->
+          <div class="con-icon-box">
+            <div class="con-icon-wrapper">
+              <i class="fa-solid fa-envelope"></i>
             </div>
-          </a>
+            <h4>nimini@gmail.com</h4>
+          </div>
         </div>
-    
-        <div>
-          <a href="#">
-            <div class="product-card">
-              <img src="./assets/product (2).webp" class="product-image" alt="">
-              <!-- <p class="product-name">Oraimo Headphones</p> -->
-            </div>
-          </a>
-        </div>
-    
-        <div>
-          <a href="#">
-            <div class="product-card">
-              <img src="./assets/product (3).webp" class="product-image" alt="">
-              <!-- <p class="product-name">Oxygen Concentrator</p> -->
-            </div>
-          </a>
-        </div>
-    
-        <div>
-          <a href="#">
-            <div class="product-card">
-              <img src="./assets/product (4).webp" class="product-image" alt="">
-              <!-- <p class="product-name">Oraimo Headphones</p> -->
-            </div>
-          </a>
-        </div>
-    
-        <div>
-          <a href="#">
-            <div class="product-card">
-              <img src="./assets/product (5).webp" class="product-image" alt="">
-              <!-- <p class="product-name">Oraimo Headphones</p> -->
-            </div>
-          </a>
-        </div>
-    
-      </div>    
-    </section>
-    <!-- ---------- Product Section Ends---------- -->
+        <!-- ----- Contact Icons Ends ----- -->
+      </section>
+      <!-- ---------- Contact Section Ends ---------- -->
 
-    <!-- ---------- Contact Section Starts ---------- -->
-    <section class="contact reusable" id="contact">
-      <!-- ----- Headers Starts ----- -->
-      <header class="headings">
-        <h3>CONTACT US</h3>
-        <h1>Get in Touch with Us</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, necessitatibus iusto? Ipsa ut facilis saepe.</p>
-      </header>  
-      <!-- ----- Headers Ends ----- -->
-
-      <!-- ----- Map Section Starts ----- -->
-
-      <div class="map">
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6998899.062377542!2d-105.37252707493494!3d31.0699310270131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864070360b823249%3A0x16eb1c8f1808de3c!2sTexas%2C%20USA!5e0!3m2!1sen!2sng!4v1692995711700!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-
-      <!-- ----- Map Section Ends ----- -->
-
-      <!-- ----- Contact Icons Starts ----- -->
-      <div class="contact-icon-container">
-        <div class="con-icon-box">
-          <div class="con-icon-wrapper"><i class="fa-solid fa-mobile"></i></div>
-          <h4>+1 (346) 664-8018</h4>
-        </div>
-
-        <div class="con-icon-box">
-          <div class="con-icon-wrapper"><i class="fa-solid fa-location-dot"></i></div>
-          <h4>Oakwood Avenue Houston, Texas</h4>
-        </div>
-
-        <div class="con-icon-box">
-          <div class="con-icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
-          <h4>nimini@gmail.com</h4>
-        </div>
-      </div>
-      <!-- ----- Contact Icons Ends ----- -->
-
-    </section>
-    <!-- ---------- Contact Section Ends ---------- -->
-
-    <!-- ---------- Footer Starts ---------- -->
+      <!-- ---------- Footer Starts ---------- -->
       <footer class="footer">
         <div class="footer-container">
-            <div class="row">
-                <div class="footer-col">
-                  <h4><div class="logo ft"><i class="fa-brands fa-neos" style="color: hsl(195, 100%, 99%);"></i> NIMINI CO.</div></h4>
-                  <p class="ft-pa">NIMINI CO.'s undeniable success stands as a testament to the exceptional quality of its services and the unparalleled professionalism of its staff.</p>
+          <div class="row">
+            <div class="footer-col">
+              <h4>
+                <div class="logo ft">
+                  <i
+                    class="fa-brands fa-neos"
+                    style="color: hsl(195, 100%, 99%)"
+                  ></i>
+                  NIMINI CO.
                 </div>
-                <div class="footer-col">
-                    <h4>TAGS</h4>
-                    <ul>
-                        <li><a href="#">Medical Supplies</a></li>
-                        <li><a href="#">Pharma Products</a></li>
-                        <li><a href="#">Healthcare Distribution</a></li>
-                        <li><a href="#">Medical Distribution Network</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Quicklinks</h4>
-                    <ul>
-                      <li><a href="#">About Us <ion-icon name="caret-forward-outline" class="ftcon"></ion-icon></a></li>
-                      <li><a href="#">Our Service <ion-icon name="caret-forward-outline" class="ftcon"></ion-icon></a></li>
-                      <li><a href="#">Our Products <ion-icon name="caret-forward-outline" class="ftcon"></ion-icon></a></li>
-                      <li><a href="#">Contact Us <ion-icon name="caret-forward-outline" class="ftcon"></ion-icon></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
+              </h4>
+              <p class="ft-pa">
+                NIMINI CO.'s undeniable success stands as a testament to the
+                exceptional quality of its services and the unparalleled
+                professionalism of its staff.
+              </p>
             </div>
+            <div class="footer-col">
+              <h4>TAGS</h4>
+              <ul>
+                <li><a href="#">Medical Supplies</a></li>
+                <li><a href="#">Pharma Products</a></li>
+                <li><a href="#">Healthcare Distribution</a></li>
+                <li><a href="#">Medical Distribution Network</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Quicklinks</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    >About Us
+                    <ion-icon
+                      name="caret-forward-outline"
+                      class="ftcon"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Our Service
+                    <ion-icon
+                      name="caret-forward-outline"
+                      class="ftcon"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Our Products
+                    <ion-icon
+                      name="caret-forward-outline"
+                      class="ftcon"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Contact Us
+                    <ion-icon
+                      name="caret-forward-outline"
+                      class="ftcon"
+                    ></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contact Us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
+      </footer>
 
-    <!-- ---------- Footer Ends ---------- -->
-
-  </div>   
-  
-  
-
-
-
-
-  <!-- ---------- On Load ---------- -->
-  <div id="loader" class="loading-page">
-    <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-    
-    <path d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z" />
-    </svg>
-    
-    
-    <div class="name-container">
-      <div class="logo-name animate__animated animate__fadeInUp animate__delay-2s">nimini co.</div>
+      <!-- ---------- Footer Ends ---------- -->
     </div>
 
-  </div>  
-  <script>
-  var myVar;
-    
-  function myFunction() {
-    myVar = setTimeout(showPage, 3500);
-  }
-    
-  function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
-  }
-  </script>
-  <script>
-    const toggleBtn = document.querySelector('.toggle_btn')
-    const toggleBtnIcon = document.querySelector('.toggle_btn i')
-    const dropDownMenu = document.querySelector('.dropdown_menu')
+    <!-- ---------- On Load ---------- -->
+    <div id="loader" class="loading-page">
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+          d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z"
+        />
+      </svg>
 
-    toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
+      <div class="name-container">
+        <div
+          class="logo-name animate__animated animate__fadeInUp animate__delay-2s"
+        >
+          nimini co.
+        </div>
+      </div>
+    </div>
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 3500);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
 
         toggleBtnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars-staggered'
-    }
-  </script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars-staggered";
+      };
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
       integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  -->
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-  <!--  ICONS  -->
-  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <!--  ICONS  -->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
-  <!-- link to Jquery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <!-- owl carousel -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- link to Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-  <script src="./script.js"></script>
-
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
