@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="NIMINI CO. — Premium medical supplies and equipment distributor serving hospitals, clinics, nursing centers, and healthcare facilities nationwide." />
+    <meta name="keywords" content="medical supplies, healthcare distribution, hospital equipment, pharmacy, surgical supplies, DME, medical distributor" />
+    <meta name="author" content="NIMINI CO." />
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="NIMINI CO. — Bringing Smiles Back to Health" />
+    <meta property="og:description" content="Premium medical supplies and healthcare equipment distributor. Serving hospitals, clinics, and care facilities with excellence." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://enimini-co.vercel.app/" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>NIMINI CO. Medical Supplies & Healthcare Distribution</title>
+  </head>
+  <body onload="myFunction()" style="margin: 0; padding: 0; max-height: 100vh">
+
+    <!-- ========== Supply Request Modal ========== -->
+    <div class="modal-overlay" id="supplyModal">
+      <div class="modal-box">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h2>Request Medical Supplies</h2>
+        <p class="modal-sub">Fill in the form below and our team will get back to you within 24 hours.</p>
+        <form class="modal-form" id="supplyForm" onsubmit="handleSupplyForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" placeholder="Dr. John Smith" required />
+            </div>
+            <div class="form-group">
+              <label>Facility Name *</label>
+              <input type="text" placeholder="St. Luke's Hospital" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" placeholder="procurement@facility.com" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+1 (000) 000-0000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Supply Type *</label>
+            <select required>
+              <option value="" disabled selected>Select a category</option>
+              <option>Diagnostic Equipment</option>
+              <option>Surgical Supplies</option>
+              <option>Patient Care Kits</option>
+              <option>Lab Equipment</option>
+              <option>Mobility & Rehabilitation Aids</option>
+              <option>Monitoring Devices</option>
+              <option>Sterilisation Tools</option>
+              <option>Pharmaceutical Products</option>
+              <option>Other / Custom Order</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message / Specifications</label>
+            <textarea placeholder="Describe your supply needs, quantities, or any urgent requirements..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn modal-submit-btn">Submit Request</button>
+        </form>
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <i class="fa-solid fa-circle-check"></i>
+          <h3>Request Submitted!</h3>
+          <p>Thank you. Our team will reach out to you shortly.</p>
+        </div>
+      </div>
+    </div>
+    <!-- ========== Modal Ends ========== -->
+
+    <!-- ========== Website Container ========== -->
+    <div class="Website-container" style="display: none" id="myDiv">
+
+      <!-- ========== Home Section ========== -->
+      <section class="home" id="home">
+        <!-- Top Bar -->
+        <div class="top-bar">
+          <div class="text-start">
+            <p class="top-text">
+              <img src="./assets/phone-call.svg" alt="svg" />
+              Call Us <a href="tel:+13466648018">+1 (346) 664-8018</a>
+            </p>
+          </div>
+          <div class="text-ends" style="text-align: right">
+            <button class="btn top-btn" onclick="document.getElementById('product').scrollIntoView({behavior:'smooth'})">VIEW PRODUCTS</button>
+          </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+          <div class="logo top-log">
+            <i class="fa-brands fa-neos"></i> NIMINI CO.
+          </div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+          <div class="nav-sci">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="dropdown_menu">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li>
+              <a href="#" class="drop"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="drop"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="drop"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="drop"><i class="fab fa-whatsapp"></i></a>
+            </li>
+          </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="tainer">
+          <div class="hero">
+            <div class="icon-container">
+              <div class="vertical-line" style="width: 1px; height: 3rem; background-color: #3388ff"></div>
+              <div class="social-icon first">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div class="social-icon">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              <div class="social-icon last">
+                <a href="https://wa.me/13466648018" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              </div>
+              <div class="vertical-line" style="width: 1px; height: 3rem; background-color: #3388ff"></div>
+            </div>
+
+            <div class="hero-text">
+              <h1>Bringing Smiles Back to Health</h1>
+              <p class="f-p">
+                NIMINI CO. delivers premium medical supplies and healthcare equipment to hospitals, clinics, and care facilities with unmatched reliability and professionalism.
+              </p>
+              <p class="s-2">
+                Trusted by healthcare professionals nationwide, from skilled nursing centers to surgical suites, we are your committed supply partner.
+              </p>
+              <button class="btn" onclick="openModal()">REQUEST SUPPLIES</button>
+            </div>
+
+            <div class="hero-image">
+              <div class="image-grid hero-grid">
+                <img class="image-grid-col-2 image-grid-row-2 g-1 animate__animated animate__fadeInRight" src="./assets/grid (1).jpg" alt="Healthcare supplies" />
+                <img class="g-2 animate__animated animate__fadeInRight" src="./assets/grid (3).jpg" alt="Medical equipment" />
+                <img class="g-3 animate__animated animate__fadeInRight" src="./assets/grid (2).jpg" alt="Hospital distribution" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== Services Section ========== -->
+      <section class="services reusable" id="services">
+        <header class="headings">
+          <h3>SERVICES</h3>
+          <h1>We deliver exceptional healthcare solutions</h1>
+          <p>From seamless ordering to specialised drop-shipping, we provide everything your facility needs to operate without interruption.</p>
+        </header>
+
+        <div class="services-container">
+          <div class="service-box" data-aos="fade-up" data-aos-delay="0">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <h2>Convenient Ordering</h2>
+            <p>Order medical supplies online with ease. Our streamlined system lets hospitals and healthcare facilities place bulk or individual requests 24/7, no paperwork, no delays.</p>
+            <a href="#contact">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-file-pen"></i>
+            </div>
+            <h2>Customisation & Drop-Shipping</h2>
+            <p>We tailor supply packages to your facility's unique specifications and ship directly to your door. From branded kits to specialised bundles, we handle every detail.</p>
+            <a href="#contact">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h2>Superior Support</h2>
+            <p>Our dedicated team is always on standby. From order tracking to urgent supply requests, we deliver responsive, professional support that healthcare professionals can rely on.</p>
+            <a href="#contact">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- New: Emergency Supply Service -->
+          <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h2>Emergency Supply Requests</h2>
+            <p>Critical shortage? We offer priority handling for urgent supply requests, ensuring your facility never faces a gap in essential medical equipment when it matters most.</p>
+            <a href="https://wa.me/13466648018" target="_blank">Request Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- New: Order Tracking -->
+          <div class="service-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-magnifying-glass-location"></i>
+            </div>
+            <h2>Order Tracking</h2>
+            <p>Stay informed every step of the way. Track your supply deliveries in real time, receive status updates, and plan your facility's inventory with confidence.</p>
+            <a href="#contact">Track Order <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- New: Consultation -->
+          <div class="service-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <h2>Procurement Consultation</h2>
+            <p>Our experts work directly with your procurement team to audit supply needs, reduce overhead costs, and build a long-term sourcing strategy that fits your budget.</p>
+            <a href="#contact">Book a Session <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== About Section ========== -->
+      <section class="about" id="about">
+        <div class="about-image">
+          <div class="abt-image">
+            <div class="image-grid abt-grid">
+              <img class="image-grid-col-2 image-grid-row-2 g-1" src="./assets/abt-grid (1).jpg" alt="Our team" />
+              <img class="g-2" src="./assets/abt-grid (3).jpg" alt="Healthcare facility" />
+              <img class="g-3" src="./assets/abt-grid (2).jpg" alt="Medical distribution" />
+            </div>
+          </div>
+        </div>
+
+        <div class="about-desc">
+          <h3>OUR COMPANY</h3>
+          <h2>NIMINI Company began as a long-term care pharmacy, run and owned by a tight-knit family known for unmatched service.</h2>
+          <p>
+            As time progressed, we underwent transformation and growth, now encompassing the distribution of medical supplies to both national chains and independent healthcare facilities such as skilled nursing centers, rehabilitation units, home care services, hospices, medical practitioners, hospitals, retail DME outlets, veterinarians, dialysis and surgery centers, as well as smaller medical supply distributors.
+            <br /><br />
+            This expansion marks not only the breadth of our reach, but also the depth of our commitment to providing essential healthcare solutions. Through each partnership we've forged and every facility we've supported, our values of excellence, reliability, and personalised care have remained unwavering.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num">500+</span>
+              <span class="stat-label">Facilities Served</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">99%</span>
+              <span class="stat-label">On-Time Delivery</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== Testimonials ========== -->
+      <section class="testimonials reusable" id="testimonial">
+        <header class="headings">
+          <h3>TESTIMONIALS</h3>
+          <h1>Trusted by healthcare professionals nationwide</h1>
+          <p>Don't take our word for it, hear what the professionals who rely on us every day have to say.</p>
+        </header>
+
+        <div class="owl-carousel owl-theme testimonials-container">
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>"NIMINI CO. has been an exceptional partner for our clinic. Their reliability and product quality have significantly improved our supply management process."</p>
+              <div class="profile">
+                <div class="profile-image"><img src="./assets/test-1.jpg" alt="test-img" /></div>
+                <div class="profile-desc">
+                  <span>Joseph Stanley</span>
+                  <span>Physician</span>
+                </div>
+              </div>
+              <div class="quote"><i class="fa fa-quote-right"></i></div>
+            </main>
+          </div>
+
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>"From ordering to delivery, everything is seamless. I especially appreciate how responsive the team is whenever we have urgent equipment needs."</p>
+              <div class="profile">
+                <div class="profile-image"><img src="./assets/test-2.jpg" alt="test-img" /></div>
+                <div class="profile-desc">
+                  <span>Deborah Inyang</span>
+                  <span>Anesthesiologist</span>
+                </div>
+              </div>
+              <div class="quote"><i class="fa fa-quote-right"></i></div>
+            </main>
+          </div>
+
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>"The drop-shipping flexibility NIMINI offers has been a game changer for our rehab unit. Products arrive on time, every time, without fail."</p>
+              <div class="profile">
+                <div class="profile-image"><img src="./assets/test-3.jpg" alt="test-img" /></div>
+                <div class="profile-desc">
+                  <span>Mike Johnson</span>
+                  <span>Occupational Therapist</span>
+                </div>
+              </div>
+              <div class="quote"><i class="fa fa-quote-right"></i></div>
+            </main>
+          </div>
+
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>"As someone overseeing procurement budgets, I appreciate the transparent pricing and consistent quality. NIMINI has become our most trusted supplier."</p>
+              <div class="profile">
+                <div class="profile-image"><img src="./assets/test-6.jpg" alt="test-img" /></div>
+                <div class="profile-desc">
+                  <span>Evelyn Daniels</span>
+                  <span>Financial Analyst</span>
+                </div>
+              </div>
+              <div class="quote"><i class="fa fa-quote-right"></i></div>
+            </main>
+          </div>
+
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>"Our nursing team depends on NIMINI for consumables. The ordering system is simple and the delivery never lets us down — critical for patient care."</p>
+              <div class="profile">
+                <div class="profile-image"><img src="./assets/test-5.jpg" alt="test-img" /></div>
+                <div class="profile-desc">
+                  <span>Riley</span>
+                  <span>Nurse Practitioner</span>
+                </div>
+              </div>
+              <div class="quote"><i class="fa fa-quote-right"></i></div>
+            </main>
+          </div>
+
+          <div class="item testimonial-card">
+            <main class="test-card-body">
+              <p>"The product variety and delivery speed have made NIMINI our go-to supplier for our dialysis centre. Outstanding service, every single time."</p>
+              <div class="profile">
+                <div class="profile-image"><img src="./assets/test-4.jpg" alt="test-img" /></div>
+                <div class="profile-desc">
+                  <span>Brad Tidwell</span>
+                  <span>Medical Technician</span>
+                </div>
+              </div>
+              <div class="quote"><i class="fa fa-quote-right"></i></div>
+            </main>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== Banner ========== -->
+      <section class="banner-one text-center">
+        <div class="container text-white">
+          <blockquote class="lead">
+            <i class="fa fa-quote-left"></i> Our mission is to enhance lives and elevate healthcare by seamlessly providing a diverse range of medical solutions, driven by a legacy of exceptional service and a commitment to innovation. <i class="fa fa-quote-right"></i>
+          </blockquote>
+          <small class="text text-sm">- Enimini Idongette, CEO</small>
+        </div>
+      </section>
+
+      <!-- ========== Products Section ========== -->
+      <section class="products reusable" id="product">
+        <header class="headings">
+          <h3>PRODUCTS</h3>
+          <h1>Our Medical Equipment & Supply Catalogue</h1>
+          <p>Premium medical supplies, equipment, and consumables for healthcare facilities of all sizes, sourced, verified, and delivered with care.</p>
+        </header>
+
+        <!-- 3D Carousel (Desktop) -->
+        <div class="product">
+          <div class="box">
+            <span style="--i: 1">
+              <img src="./assets/product (1).webp" alt="Diagnostic Equipment" />
+              <!-- <div class="product-label">Diagnostic Equipment</div> -->
+            </span>
+            <span style="--i: 2">
+              <img src="./assets/product (2).webp" alt="Surgical Supplies" />
+              <!-- <div class="product-label">Surgical Supplies</div> -->
+            </span>
+            <span style="--i: 3">
+              <img src="./assets/product (3).webp" alt="Patient Care Kits" />
+              <!-- <div class="product-label">Patient Care Kits</div> -->
+            </span>
+            <span style="--i: 4">
+              <img src="./assets/product (4).webp" alt="Lab Equipment" />
+              <!-- <div class="product-label">Lab Equipment</div> -->
+            </span>
+            <span style="--i: 5">
+              <img src="./assets/product (5).webp" alt="Mobility Aids" />
+              <!-- <div class="product-label">Mobility Aids</div> -->
+            </span>
+            <span style="--i: 6">
+              <img src="./assets/product (6).webp" alt="Monitoring Devices" />
+              <!-- <div class="product-label">Monitoring Devices</div> -->
+            </span>
+            <span style="--i: 7">
+              <img src="./assets/product (7).webp" alt="Sterilisation Tools" />
+              <!-- <div class="product-label">Sterilisation Tools</div> -->
+            </span>
+            <span style="--i: 8">
+              <img src="./assets/product (8).webp" alt="Rehab Equipment" />
+              <!-- <div class="product-label">Rehab Equipment</div> -->
+            </span>
+          </div>
+        </div>
+
+        <!-- Mobile Product Grid -->
+        <div class="sec-products">
+          <div class="products-container p-container">
+            <div>
+              <a href="#" onclick="openModal(); return false;">
+                <div class="product-card">
+                  <img src="./assets/product (1).webp" class="product-image" alt="Diagnostic Equipment" />
+                  <div class="mobile-product-label">Diagnostic Equipment</div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" onclick="openModal(); return false;">
+                <div class="product-card">
+                  <img src="./assets/product (2).webp" class="product-image" alt="Surgical Supplies" />
+                  <div class="mobile-product-label">Surgical Supplies</div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" onclick="openModal(); return false;">
+                <div class="product-card">
+                  <img src="./assets/product (6).webp" class="product-image" alt="Monitoring Devices" />
+                  <div class="mobile-product-label">Monitoring Devices</div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" onclick="openModal(); return false;">
+                <div class="product-card">
+                  <img src="./assets/product (7).webp" class="product-image" alt="Sterilisation Tools" />
+                  <div class="mobile-product-label">Sterilisation Tools</div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" onclick="openModal(); return false;">
+                <div class="product-card">
+                  <img src="./assets/product (5).webp" class="product-image" alt="Mobility Aids" />
+                  <div class="mobile-product-label">Mobility Aids</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="duct">
+          <button class="btn" onclick="openModal()">REQUEST A PRODUCT</button>
+        </div>
+      </section>
+
+      <!-- ========== Contact Section ========== -->
+      <section class="contact reusable" id="contact">
+        <header class="headings">
+          <h3>CONTACT US</h3>
+          <h1>Get in Touch with Our Team</h1>
+          <p>Reach out to discuss supply needs, partnerships, or place a custom order. Available Monday – Saturday, 8am – 6pm CST.</p>
+        </header>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper" data-aos="fade-up">
+          <h3 class="form-section-title">Send Us a Message</h3>
+          <form class="contact-form" id="contactForm" onsubmit="handleContactForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" placeholder="Full name" required />
+              </div>
+              <div class="form-group">
+                <label>Facility / Organisation</label>
+                <input type="text" placeholder="Hospital or clinic name" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+1 (000) 000-0000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea placeholder="Tell us about your supply needs, enquiry, or partnership interest..." rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn contact-submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <div class="contact-success" id="contactSuccess" style="display:none;">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Message sent! We'll be in touch within 24 hours.</p>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="map" data-aos="fade-up">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6998899.062377542!2d-105.37252707493494!3d31.0699310270131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864070360b823249%3A0x16eb1c8f1808de3c!2sTexas%2C%20USA!5e0!3m2!1sen!2sng!4v1692995711700!5m2!1sen!2sng"
+              width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Contact Icons -->
+        <div class="contact-icon-container">
+          <div class="con-icon-box">
+            <div class="con-icon-wrapper"><i class="fa-solid fa-mobile"></i></div>
+            <h4>+1 (346) 664-8018</h4>
+          </div>
+          <div class="con-icon-box">
+            <div class="con-icon-wrapper"><i class="fa-solid fa-location-dot"></i></div>
+            <h4>Oakwood Avenue, Houston, Texas</h4>
+          </div>
+          <div class="con-icon-box">
+            <div class="con-icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
+            <h4>nimini@gmail.com</h4>
+          </div>
+          <div class="con-icon-box">
+            <div class="con-icon-wrapper"><i class="fa-solid fa-clock"></i></div>
+            <h4>Mon – Sat: 8am – 6pm CST</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== Footer ========== -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>
+                <div class="logo ft">
+                  <i class="fa-brands fa-neos" style="color: hsl(195, 100%, 99%)"></i>
+                  NIMINI CO.
+                </div>
+              </h4>
+              <p class="ft-pa">
+                NIMINI CO. is a trusted medical supplies and healthcare equipment distributor, committed to excellence, reliability, and personalised care for every facility we serve.
+              </p>
+            </div>
+            <div class="footer-col">
+              <h4>SPECIALITIES</h4>
+              <ul>
+                <li><a href="#">Medical Supplies</a></li>
+                <li><a href="#">Pharma Products</a></li>
+                <li><a href="#">Healthcare Distribution</a></li>
+                <li><a href="#">Medical Distribution Network</a></li>
+                <li><a href="#">Custom Supply Packages</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#about">About Us <ion-icon name="caret-forward-outline" class="ftcon"></ion-icon></a></li>
+                <li><a href="#services">Our Services <ion-icon name="caret-forward-outline" class="ftcon"></ion-icon></a></li>
+                <li><a href="#product">Our Products <ion-icon name="caret-forward-outline" class="ftcon"></ion-icon></a></li>
+                <li><a href="#contact">Contact Us <ion-icon name="caret-forward-outline" class="ftcon"></ion-icon></a></li>
+                <li><a href="#" onclick="openModal(); return false;">Request Supplies <ion-icon name="caret-forward-outline" class="ftcon"></ion-icon></a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Connect With Us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="footer-emergency">
+                <p class="emergency-label">Emergency Supply Line:</p>
+                <a href="tel:+13466648018" class="emergency-link">+1 (346) 664-8018</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 NIMINI CO. All rights reserved. | Houston, Texas</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- ========== Website Container Ends ========== -->
+
+    <!-- ========== WhatsApp Floating Button ========== -->
+    <a href="https://wa.me/13466648018" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- ========== Loader ========== -->
+    <div id="loader" class="loading-page">
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z" />
+      </svg>
+      <div class="name-container">
+        <div class="logo-name animate__animated animate__fadeInUp animate__delay-1s">nimini co.</div>
+      </div>
+    </div>
+
+    <!-- ========== Scripts ========== -->
+    <script>
+      // Faster loader — 1.5s
+      var myVar;
+      function myFunction() {
+        myVar = setTimeout(showPage, 1500);
+      }
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+
+    <script>
+      // Mobile nav toggle
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+        toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars-staggered";
+      };
+
+      // Close dropdown when a link is clicked
+      dropDownMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          dropDownMenu.classList.remove('open');
+          toggleBtnIcon.classList = "fa-solid fa-bars-staggered";
+        });
+      });
+    </script>
+
+    <script>
+      // Modal
+      function openModal() {
+        document.getElementById('supplyModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeModal() {
+        document.getElementById('supplyModal').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+      // Close modal on overlay click
+      document.getElementById('supplyModal').addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
+      });
+
+      // Supply form submit
+      function handleSupplyForm(e) {
+        e.preventDefault();
+        document.getElementById('supplyForm').style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'flex';
+        setTimeout(closeModal, 3000);
+        setTimeout(() => {
+          document.getElementById('supplyForm').style.display = 'block';
+          document.getElementById('formSuccess').style.display = 'none';
+          document.getElementById('supplyForm').reset();
+        }, 3500);
+      }
+
+      // Contact form submit
+      function handleContactForm(e) {
+        e.preventDefault();
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('contactSuccess').style.display = 'flex';
+        setTimeout(() => {
+          document.getElementById('contactForm').style.display = 'block';
+          document.getElementById('contactSuccess').style.display = 'none';
+          document.getElementById('contactForm').reset();
+        }, 4000);
+      }
+    </script>
+
+    <script>
+      // Scroll: navbar sticky
+      var homeSection = document.querySelector('.home');
+      window.addEventListener('scroll', scrollFunction);
+      function scrollFunction() {
+        if (window.scrollY > 0) {
+          homeSection.classList.add('active');
+        } else {
+          homeSection.classList.remove('active');
+        }
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({ once: true, duration: 700 });</script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      // Owl Carousel
+      $('.testimonials-container').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        nav: true,
+        navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
+        responsive: {
+          0: { items: 1, nav: false },
+          600: { items: 1, nav: true },
+          768: { items: 2 }
+        }
+      });
+    </script>
+  </body>
+</html>
